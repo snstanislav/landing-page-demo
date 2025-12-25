@@ -1,0 +1,22 @@
+.night {
+    --std-bg-color: #333;
+    --std-text-color: #eee;
+    --std-text-color-fixed: #111;
+    --regular-text-color: #eee;
+    --regular-text-color-fixed: #555;
+    --large-text-color: #83c6fd;
+    --large-text-color-fixed: #ffffff;
+
+    --secondary-color: #59439f;
+    --secondary-light-color: #608ed8;
+    --secondary-light-color-fixed: #eeeafc;
+    --secondary-extra-color: #ff6248;
+
+    --regular-shadow-color: #ddd;
+    
+    --label-fore-color: var(--secondary-light-color-fixed);
+    --label-bg-color: var(--secondary-color);
+
+    --theme-toggle-background: #0c67bc;
+    --theme-toggle-shadow: #333; 
+}

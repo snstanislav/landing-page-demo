@@ -1,0 +1,24 @@
+:root {
+    --std-bg-color: #fff;
+    --std-text-color: #111;
+    --std-text-color-fixed: #111;
+    --regular-text-color: #555;
+    --regular-text-color-fixed: #555;
+    --large-text-color: #194051;
+    --large-text-color-fixed: #194051;
+    
+    --secondary-color: #6750b2;
+    --secondary-text-color-fixed: #fff;
+    --secondary-light-color: #d0e8ff;
+    --secondary-light-color-fixed: #eeeafc;
+    --secondary-extra-color: #ff6248;
+
+    --regular-shadow-color: #aaa;
+
+    --link-color: #5d80ff;
+    --label-fore-color: var(--secondary-color);
+    --label-bg-color: var(--secondary-light-color-fixed);
+
+    --theme-toggle-background: #f80;
+    --theme-toggle-shadow: #666; 
+}

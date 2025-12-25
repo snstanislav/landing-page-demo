@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/hero-section.css">
+    <link rel="stylesheet" href="css/partials/advantage-section.css">
+    <link rel="stylesheet" href="css/partials/study-section.css">
+    <link rel="stylesheet" href="css/partials/usecase-section.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="js/components/theme-toggle.js"></script>
+    <script src="js/partials/nav-menu-toggle.js"></script>
+    <script src="js/partials/study-menu.js"></script>
+    <script src="js/partials/slider-carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <title>Muster Firma - Langing demo</title>
+</head>
+
+<body>
+    <header>
+        <button id="menu-toogle-btn" class="menu-toggle" aria-controls="navbar-menu" aria-expanded="false">
+            <span class="menu-toggle__ico"></span>
+            <span class="menu-toggle__ico"></span>
+            <span class="menu-toggle__ico"></span>
+        </button>
+
+        <a href="#" class="header-logo"><img src="assets/images/head-logo.png" alt="firma header logo"
+                loading="lazy"></a>
+
+        <theme-toggle day-icon="assets/icons/day-mode-ico.png"
+            night-icon="assets/icons/night-mode-ico.png"></theme-toggle>
+
+        <nav id="navbar-menu" class="menu-bar">
+            <ul>
+                <li class="menu-bar__item">
+                    <span class="menu-bar__category">
+                        <span><a href="#" class="menu-bar__title">
+                                Kompetenzen
+                            </a></span>
+
+                        <img src="assets/icons/chevron-down.png" alt="">
+                    </span>
+                    <ul class="menu-bar__submenu">
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Services</a>
+                        </li>
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Produktkonfigurator</a>
+                        </li>
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">DataHub</a>
+                        </li>
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">AI Prototyping</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="menu-bar__category">
+                        <span><a href="#" class="menu-bar__title">
+                                LAB
+                            </a></span>
+                        <img src="assets/icons/chevron-down.png" alt="">
+                    </span>
+                    <ul class="menu-bar__submenu">
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Forschung</a>
+                        </li>
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Prototypen</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="menu-bar__category">
+                        <span><a href="#" class="menu-bar__title">
+                                Unternehmen
+                            </a></span>
+                        <img src="assets/icons/chevron-down.png" alt="">
+                    </span>
+                    <ul class="menu-bar__submenu">
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Jobs & Karriere</a>
+                        </li>
+                        <li class="menu-bar__submenu-item">
+                            <a href="#" class="menu-bar__submenu-link">Über uns</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="menu-bar__category">
+                        <span><a href="#" class="menu-bar__title">
+                                Kontakt
+                            </a></span>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="lang"><a href="#" class="lang-active">DE</a>|<a href="#">EN</a></div>
+    </header>
+
+    <main>
+        <!-- Hero Section-->
+        <section class="hero">
+            <div class="label hero__study-label">Thematische Forschung</div>
+            <div class="hero__intro">
+                <h1>Konfigurator <br>für Automobilhersteller</h1>
+                <p>Seit über einem Jahrzehnt unterstützt unser Unternehmen Automobilhersteller mit einem globalen
+                    Fahrzeugkonfigurator, der Millionen von Varianten in über 100 Märkten weltweit effizient verwaltet
+                    und so für konsistente Produktdaten und ein optimales Benutzererlebnis sorgt.</p>
+            </div>
+            <div class="hero__slider" role="region" aria-label="Hero image slider">
+                <img src="assets/images/header-slider1.png" class="hero__slider-img-item" height="100px" alt=""
+                    loading="lazy">
+                <img src="assets/images/header-slider2.png" class="hero__slider-img-item" height="200px" alt=""
+                    loading="lazy">
+                <img src="assets/images/header-slider3.png" class="hero__slider-img-item" height="100px" alt=""
+                    loading="lazy">
+            </div>
+        </section>
+
+        <!-- Advantages -->
+        <section class="card">
+            <div class="card__item">
+                <img class="card__icon" src="assets/icons/unlimited.svg" alt="" loading="lazy">
+                <h3 class="card__title">Ist Ihr Produkt komplex? Kein Problem!</h3>
+                <p class="card__text">Unabhängig von der Anzahl der Optionen, Varianten oder Sonderwünsche wird jede
+                    Kombination fehlerfrei angezeigt. Ein intelligentes Regelsystem prüft automatisch jeden Eintrag.</p>
+            </div>
+            <div class="card__item">
+                <img class="card__icon" src="assets/icons/routing.svg" alt="" loading="lazy">
+                <h3 class="card__title">Heute Deutschland, morgen die ganze Welt</h3>
+                <p class="card__text">Ihre Lösung funktioniert überall, vom ersten Tag an. Wir kümmern uns um die
+                    Lokalisierung, die Schulung Ihrer Mitarbeiter und die Unterstützung bei der internationalen
+                    Implementierung.</p>
+            </div>
+            <div class="card__text-decor"><span>Unendlichkeit <br>trifft auf <br>Einfachheit</span></div>
+            <div class="card__item">
+                <img class="card__icon" src="assets/icons/maximize-3.svg" alt="" loading="lazy">
+                <h3 class="card__title">Ihr Konfigurator ist stets aktuell und individuell anpassbar</h3>
+                <p class="card__text">Datenchaos gehört der Vergangenheit an. Wir nehmen Ihre Vorlagen, integrieren sie
+                    über eine API und bieten eine nahtlose und saubere Datengrundlage.</p>
+            </div>
+            <div class="card__item">
+                <img class="card__icon" src="assets/icons/star.svg" alt="" loading="lazy">
+                <h3 class="card__title">Marktanpassung und Lokalisierung</h3>
+                <p class="card__text">Jeder Markt hat seine eigenen Regeln; wir integrieren diese automatisch in Ihre.
+                    Konfigurator: Sprachen, Preise, regionale Besonderheiten.</p>
+            </div>
+            <div class="card__item">
+                <img class="card__icon" src="assets/icons/global.svg" alt="" loading="lazy">
+                <h3 class="card__title">Automatisierte Qualitätssicherung</h3>
+                <p class="card__text">Unser System testet automatisch jeden Parameter, jede logische Komponente, jeden
+                    Codeabschnitt. Fehler werden erkannt, bevor sie auftreten.</p>
+            </div>
+        </section>
+
+        <!-- Case Study -->
+        <section class="study">
+            <div class="study__container">
+                <nav id="study-menu-nav" class="study__menu" role="tablist">
+                    <ul>
+                        <li class="study__menu-item study__menu-item--active">
+                            <button role="tab" aria-controls="panel-overview" aria-selected="true">
+                                <img src="assets/icons/layer.svg" alt="" loading="lazy">
+                                <span>Projektübersicht</span>
+                            </button>
+                        </li>
+                        <li class="study__menu-item">
+                            <button role="tab" aria-controls="panel-overview">
+                                <img src="assets/icons/messages-3.png" alt="" loading="lazy">
+                                <span>Herausforderung</span>
+                            </button>
+                        </li>
+                        <li class="study__menu-item">
+                            <button role="tab" aria-controls="panel-overview" loading="lazy">
+                                <img src="assets/icons/lamp-on.svg" alt="">
+                                <span>Ziele & Anforderungen</span>
+                            </button>
+                        </li>
+                        <li class="study__menu-item">
+                            <button role="tab" aria-controls="panel-overview" loading="lazy">
+                                <img src="assets/icons/chart.svg" alt="">
+                                <span>Lösung</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="study__content" id="panel-overview">
+                    <div class="study__content-item study__content-item--active">
+                        <div class="label">PROJEKTÜBERSICHT</div>
+                        <h2>100 Märkte und Millionen Varianten</h2>
+                        <div>
+                            <p>
+                                Seit über einem Jahrzehnt arbeiten wir an einem der größten digitalen Vertriebsprojekte
+                                der Automobilindustrie: dem globalen Fahrzeugkonfigurator. Er entstand aus der
+                                Herausforderung, Millionen von Optionen mit den komplexen, länderspezifischen
+                                Vorschriften und Anforderungen in Einklang zu bringen, und hat sich zu einem zentralen
+                                Vertriebstool für Endkunden, Händler und interne Systeme entwickelt.
+                            </p>
+                            <p>
+                                Unsere Lösung verbindet hohe Skalierbarkeit mit absoluter Präzision: automatisierte
+                                Datenflüsse, integrierte Handelsplattformen, einheitliche Preisgestaltung und
+                                Qualitätskontrolle für alle Produktlinien. Dadurch wird die maximale Komplexität
+                                unsichtbar und die Konfiguration des Fahrzeugs so einfach wie ein Klick.
+                            </p>
+                            <p>
+                                Heute wird der Konfigurator in über 100 Märkten eingesetzt. Er wandelt Daten in
+                                Fachwissen, Komplexität in Klarheit um – und bildet die Grundlage für ein optimales
+                                digitales Kundenerlebnis.
+                            </p>
+                        </div>
+                        <div class="study__content-nav">
+                            <div class="study__content-nav--forward">
+                                <a>Herausforderung</a>
+                                <img class="arrow" src="assets/icons/arrow-icon-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study__content-item">
+                        <div class="label">HERAUSFORDERUNG</div>
+                        <h2>Reibungslose und skalierbare Softwarebereitstellung</h2>
+                        <div>
+                            <p>
+                                Eine erfolgreiche Softwareimplementierung ist entscheidend für den Übergang von der
+                                Entwicklung zur Produktion. Wir unterstützen Sie mit klarer Prozessdefinition,
+                                realistischer Planung und technischer Präzision. Unser Implementierungsservice richtet
+                                sich an Unternehmen, die neue Systeme intern wie extern zuverlässig, systematisch und
+                                reibungslos einführen möchten.
+                            </p>
+                        </div>
+                        <div class="study__content-nav">
+                            <div class="study__content-nav--back">
+                                <img class="arrow" src="assets/icons/arrow-icon-left.png" alt="">
+                                <a>Projektübersicht</a>
+                            </div>
+                            <div class="study__content-nav--forward">
+                                <a>Ziele & Anforderungen</a>
+                                <img class="arrow" src="assets/icons/arrow-icon-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study__content-item">
+                        <div class="label">ZIELE & ANFORDERUNGEN</div>
+                        <h2>Digitale Strategien und Roadmaps</h2>
+                        <div>
+                            <p>
+                                Digitale Projekte scheitern nicht an Ideenmangel, sondern an Fehlentscheidungen zu
+                                Beginn. Hier setzen wir an: Unsere technische IT-Beratung verbindet fundiertes Wissen
+                                über moderne Systemarchitektur mit unternehmerischem Denken. Wir analysieren Ihre
+                                aktuelle Situation präzise, ​​identifizieren Verbesserungspotenziale und entwickeln die
+                                Basis für solide, zukunftsorientierte IT-Strategien.
+                            </p>
+                        </div>
+                        <div class="study__content-nav">
+                            <div class="study__content-nav--back">
+                                <img class="arrow" src="assets/icons/arrow-icon-left.png" alt="">
+                                <a>Herausforderung</a>
+                            </div>
+                            <div class="study__content-nav--forward">
+                                <a>Lösung</a>
+                                <img class="arrow" src="assets/icons/arrow-icon-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="study__content-item">
+                        <div class="label">LÖSUNG</div>
+                        <h2>Intuitive und kundenspezifische Softwareentwicklung</h2>
+                        <div>
+                            <p>
+                                Als erfahrenes Team aus Entwicklern, UI/UX-Designern und IT-Strategen entwickeln wir
+                                individuelle Software, die genau auf Ihre Bedürfnisse, Nutzergruppen und Geschäftsziele
+                                zugeschnitten ist. Ob komplexe B2B-Plattform, Webanwendung oder Tool für Praktikanten –
+                                wir verbinden technologische Perfektion mit klarem, nutzerorientiertem Design.
+                            </p>
+                        </div>
+                        <div class="study__content-nav">
+                            <div class="study__content-nav--back">
+                                <img class="arrow" src="assets/icons/arrow-icon-left.png" alt="">
+                                <a>Ziele & Anforderungen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="box-decor study__decor-left" src="assets/images/swing-box2.png" alt="" loading="lazy">
+                <img class="box-decor study__decor-right" src="assets/images/swing-box1.png" alt="" loading="lazy">
+        </section>
+
+        <!-- Use-Case Blocks -->
+        <section class="usecase">
+            <h2 class="usecase__title">So können Sie Liefernetzwerke neu erfinden</h2>
+            <div class="usecase__wrapper">
+                <div class="usecase__item">
+                    <p class="usecase__text usecase__text--small">Weltweit skalierbar <br>für neue Märkte</p>
+                    <p class="usecase__text usecase__text--large">Weltweit skalierbar <br>für neue Märkte</p>
+                </div>
+                <div class="usecase__item">
+                    <p class="usecase__text usecase__text--small">Weltweit skalierbar <br>für neue Märkte</p>
+                    <p class="usecase__text usecase__text--large">Weltweit skalierbar <br>für neue Märkte</p>
+                </div>
+                <img src="assets/images/team_bild.png" alt="our team" class="usecase__item usecase__item--team"
+                    loading="lazy">
+                <div class="usecase__item">
+                    <p class="usecase__text usecase__text--small">Weltweit skalierbar <br>für neue Märkte</p>
+                    <p class="usecase__text usecase__text--large">Weltweit skalierbar <br>für neue Märkte</p>
+                </div>
+                <div class="usecase__item usecase__item--additional">
+                    <p class="usecase__text usecase__text--small">Weltweit skalierbar <br>für neue Märkte</p>
+                    <p class="usecase__text usecase__text--large">Weltweit skalierbar <br>für neue Märkte</p>
+                </div>
+                <div class="usecase__item usecase__item--extra">
+                    <p class="usecase__text usecase__text--small">Weltweit skalierbar <br>für neue Märkte</p>
+                    <p class="usecase__text usecase__text--large">Weltweit skalierbar <br>für neue Märkte</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="box-decor footer__decor-left" src="assets/images/footer-swing2.png" alt="" loading="lazy">
+        <img class="box-decor footer__decor-right" src="assets/images/footer-swing1.png" alt="" loading="lazy">
+
+        <!-- CTA -->
+        <section class="cta">
+            <p class="slogan-regular cta__text">Lust an einer Zusammenarbeit mit uns?</p>
+            <p class="slogan-accentuated cta__text">Los geht's.</p>
+
+            <div>
+                <button class="cta__button">
+                    Als Kunde
+                </button>
+                <button class="cta__button">
+                    Als mitglieder
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Abschluss -->
+        <section class="page-basement">
+            <div class="page-basement__social">
+                <div class="page-basement__linkedin">
+                    Begleite uns <a href="#"><img src="assets/icons/footer_linkedin-icon.svg" alt="Linkedin logo"></a>
+                </div>
+            </div>
+
+            <div class="page-basement__base">
+                <div class="page-basement__community">
+                    <div>
+                        <p class="slogan-regular page-basement__text">Lust an einer Zusammenarbeit mit uns?</p>
+                        <p class="slogan-accentuated page-basement__text">Los geht's.</p>
+                    </div>
+                    <div class="page-basement__partners">
+                        <img class="page-basement__partners-google" src="assets/images/footer_google-icon.png"
+                            alt="Google logo">
+                    </div>
+                </div>
+
+                <div class="page-basement__col page-basement__services">
+                    <h4 class="page-basement__title">Leistungen</h4>
+                    <ul>
+                        <li><a href="#">Entwicklung</a></li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Rolloutunterstützung</a></li>
+                        <li><a href="#">CI/CD</a></li>
+                        <li><a href="#">Cloud Migration</a></li>
+                    </ul>
+                </div>
+                <div class="page-basement__col page-basement__products">
+                    <h4 class="page-basement__title">Produkte</h4>
+                    <ul>
+                        <li><a href="#">Wir jetzt</a></li>
+                        <li><a href="#">Produktkonfigurator</a></li>
+                        <li><a href="#">Data Hub</a></li>
+                    </ul>
+                </div>
+                <div class="page-basement__col page-basement__company">
+                    <h4 class="page-basement__title">Unternehmen</h4>
+                    <ul>
+                        <li><a href="#">Über Uns</a></li>
+                        <li><a href="#">Jobs & Karriere</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Forschung</a></li>
+                        <li><a href="#">Entwicklung</a></li>
+                    </ul>
+                </div>
+                <div class="page-basement__col page-basement__contacts">
+                    <h4 class="page-basement__title">Projekt anfragen</h4>
+                    <ul>
+                        <li><a href="mailto:info@muster.de">info@muster.de</a></li>
+                        <li><a href="tel:+490000999999">+49 0000 999999</a></li>
+                        <li>Musterstraße 10 01000 Berlin Deutschland</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-basement__legal-bar">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Cookies bearbeiten</a></li>
+                </ul>
+                <div class="page-basement__copyright">© 2025 Muster Firma GmbH. All rights reserved.</div>
+            </div>
+
+        </section>
+    </footer>
+</body>
+
+</html>

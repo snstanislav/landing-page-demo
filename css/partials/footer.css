@@ -1,0 +1,171 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer * {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer__decor-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer__decor-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 2rem 0 0;
+}
+
+.cta__text {
+    font-size: 2.6rem;
+}
+
+.cta div {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.cta__button {
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 5rem;
+    max-width: 17rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #fff;
+    background: var(--secondary-color);
+    background-image: url("../../assets/icons/arrow-icon-right-wh.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+
+.cta__button img {
+    margin-left: 1rem;
+}
+
+.slogan-accentuated {
+    font-weight: bold;
+    color: var(--secondary-light-color-fixed);
+}
+
+/* Basement */
+.page-basement__linkedin {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.page-basement {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 100%;
+}
+
+.page-basement__base {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.page-basement__community {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.page-basement__text {
+    font-size: 1.7rem;
+}
+
+.page-basement__partners {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.page-basement__partners-google {
+    height: 4rem;
+}
+
+.page-basement__partners-research {
+    height: 3rem;
+}
+
+.page-basement__partners-tisax {
+    height: 2rem;
+}
+
+.page-basement__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-basement__col h4 {
+    margin: 1.4rem auto;
+    width: 100%;
+}
+
+.page-basement__col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    max-width: 10rem;
+}
+
+.page-basement__legal-bar,
+.page-basement__legal-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.page-basement__legal-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .cta div,
+    .page-basement__base,
+    .page-basement__legal-bar,
+    .page-basement__legal-bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .page-basement__col h4,
+    .page-basement__col ul,
+    .page-basement__legal-bar  {
+        text-align: center;
+    }
+}
