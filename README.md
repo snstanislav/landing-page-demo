@@ -3,7 +3,7 @@
 
 Recreation of a test landing page according to the provided design example.
 
-**Live demo:** <demo_link>
+**Live demo:** https://snstanislav.github.io/landing-page-demo/
 
 ---
 
@@ -11,7 +11,7 @@ Recreation of a test landing page according to the provided design example.
 
 ```bash
 cd <your_folder>
-git clone <repo_link>
+git clone https://github.com/snstanislav/landing-page-demo.git
 ```
 Now the start page index.html is avalable from <your_folder>
 
