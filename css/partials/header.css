@@ -236,7 +236,7 @@ header {
         width: 100%;
         height: 3px;
         background: var(--std-text-color);
-        transform: translateX(-101%);
+        transform: translateX(-110%);
         transition: 0.2s ease-in;
     }
 
